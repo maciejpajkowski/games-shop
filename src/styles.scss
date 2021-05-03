@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Source Sans Pro;
+    src: url(assets/fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: Source Sans Pro Bold;
+    src: url(assets/fonts/SourceSansPro-Bold.ttf);
+}
+
+* {
+    font-family: Source Sans Pro, "Arial", monospace;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.btn {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    line-height: 22px;
+    padding: 10px 14px;
+    background: linear-gradient(0deg, #7a3dc6 0%, #b65ae2 100%);
+
+    &:hover {
+        background: #713b8d;
+    }
+
+    &:active {
+        background: #b65ae2;
+    }
+}
+
+.btn--secret {
+    background: linear-gradient(0deg, #00905e 0%, #00c78c 100%);
+
+    &:hover {
+        background: #00905e;
+    }
+
+    &:active {
+        background: #00c78c;
+    }
+}
