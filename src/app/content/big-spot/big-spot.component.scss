@@ -1,19 +1,15 @@
-.bigspot-container {
+.bigspot {
     position: relative;
     display: flex;
     height: 370px;
-    background-color: red;
     justify-content: center;
     align-items: center;
 }
 
-.lazy {
+.bigspot__lazy {
     display: block;
     position: absolute;
     z-index: 2;
+    height: 370px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-
-    img {
-        display: block;
-    }
 }

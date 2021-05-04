@@ -1,0 +1,10 @@
+<div class="shopping-cart" [ngClass]="{ 'active': shoppingCartOpen }">
+    <div class="shopping-cart__controls">
+        <div class="shopping-cart__item-counter">{{ gamesInCartCount > 0 ? gamesInCartCount === 1 ? '1 item in cart': gamesInCartCount + " items in cart" : "Cart is empty." }}</div>
+        <div class="shopping-cart__total-price">${{ totalPrice }}</div>
+        <button class="btn" (click)="onClearCart()" [disabled]="!gamesInCartCount">Clear cart</button>
+    </div>
+    <div class="shopping-cart__list">
+        <app-shopping-cart-item *ngFor="let game of shoppingCart" [game]="game"></app-shopping-cart-item>
+    </div>
+</div>

@@ -38,6 +38,11 @@ body {
     &:active {
         background: #b65ae2;
     }
+
+    &:disabled {
+        background: grey;
+        cursor: auto;
+    }
 }
 
 .btn--secret {

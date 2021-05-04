@@ -1,0 +1,66 @@
+.smallspot {
+    height: 186px;
+    max-width: 196px;
+}
+
+.smallspot__game-cover {
+    height: 110px;
+}
+
+.smallspot__game-data {
+    position: relative;
+    height: 66px;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+.smallspot__game-title {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.smallspot__buy-block {
+    position: absolute;
+    display: flex;
+    bottom: 6px;
+    right: 6px;
+}
+
+.smallspot__discount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    font-size: 13px;
+    background: #00905e;
+    border-radius: 2px;
+    width: 42px;
+    height: 22px;
+    margin-right: 6px;
+}
+
+.smallspot__buy-button {
+    color: #404040;
+    height: 22px;
+    background: #e0e0e0;
+    border: 1px solid #979797;
+    box-shadow: 0px 1px 1px rgba(198, 198, 198, 0.5);
+    border-radius: 2px;
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: 0px 2px 1px rgba(198, 198, 198, 0.2);
+        background: #eee;
+        cursor: pointer;
+    }
+
+    &.owned {
+        border: 1px solid rgba(151, 151, 151, 1);
+        color: rgba(151, 151, 151, 1);
+
+        &:hover {
+            cursor: auto;
+            background: inherit;
+        }
+    }
+}

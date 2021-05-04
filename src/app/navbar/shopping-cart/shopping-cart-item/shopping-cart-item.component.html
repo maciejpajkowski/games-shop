@@ -1,0 +1,10 @@
+<div class="shopping-cart-item">
+    <a href="{{ game.link }}">
+        <img src="{{ game.imageUrl }}" alt="{{ game.title }}">
+    </a>
+    <div class="shopping-cart-item__info">
+        <div class="shopping-cart-item__title">{{ shortenedGameTitle }}</div>
+        <span class="shopping-cart-item__remove" (click)="onRemove(game.id)">Remove</span>
+    </div>
+    <div class="shopping-cart-item__price">${{ game.price }}</div>
+</div>

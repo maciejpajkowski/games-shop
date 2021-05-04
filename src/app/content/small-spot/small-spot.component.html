@@ -1,1 +1,17 @@
-<p>small-spot works!</p>
+<div class="smallspot">
+    <div class="smallspot__game-cover">
+        <a href="{{ game.link }}">
+            <img src="{{ game.imageUrl}}" alt="{{ game.title }}">
+        </a>
+    </div>
+    <div class="smallspot__game-data">
+        <div class="smallspot__game-title">
+            {{ game.title }}
+        </div>
+        <div class="smallspot__buy-block">
+            <div class="smallspot__discount" *ngIf="game.discount">-{{ game.discount }}%</div>
+            <button class="smallspot__buy-button" *ngIf="!owned" [disabled]="inCart" (click)="onAddToCart()">{{ inCart ? "IN CART" : "$" + game.price }}</button>
+            <button class="smallspot__buy-button owned" *ngIf="owned" [disabled]="owned">OWNED</button>
+        </div>
+    </div>
+</div>
