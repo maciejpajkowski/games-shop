@@ -13,7 +13,7 @@ export class GamesService {
             9.99,
             0,
             false,
-            '../assets/images/Deponia.png',
+            './assets/images/Deponia.png',
             'https://www.gog.com/game/deponia_2_chaos_on_deponia'
         ),
     ];
@@ -24,7 +24,7 @@ export class GamesService {
             9.99,
             0,
             false,
-            '../assets/images/AC.png',
+            './assets/images/AC.png',
             'https://www.gog.com/game/assassins_creed_directors_cut'
         ),
         new Game(
@@ -33,7 +33,7 @@ export class GamesService {
             5.99,
             0,
             false,
-            '../assets/images/Settlers.png',
+            './assets/images/Settlers.png',
             'https://www.gog.com/game/the_settlers_2_gold_edition'
         ),
     ];
@@ -47,7 +47,7 @@ export class GamesService {
             5.99,
             30,
             true,
-            '../assets/images/BigSpot.png',
+            './assets/images/BigSpot.png',
             'https://www.gog.com/game/witcher_adventure_game'
         ),
         new Game(
@@ -56,7 +56,7 @@ export class GamesService {
             9.99,
             50,
             false,
-            '../assets/images/Oddworld.png',
+            './assets/images/Oddworld.png',
             'https://www.gog.com/game/oddworld_strangers_wrath'
         ),
         new Game(
@@ -65,7 +65,7 @@ export class GamesService {
             9.99,
             0,
             false,
-            '../assets/images/Deponia.png',
+            './assets/images/Deponia.png',
             'https://www.gog.com/game/deponia_2_chaos_on_deponia'
         ),
         new Game(
@@ -74,7 +74,7 @@ export class GamesService {
             5.99,
             0,
             false,
-            '../assets/images/Settlers.png',
+            './assets/images/Settlers.png',
             'https://www.gog.com/game/the_settlers_2_gold_edition'
         ),
         new Game(
@@ -83,7 +83,7 @@ export class GamesService {
             9.99,
             50,
             false,
-            '../assets/images/Neverwinter.png',
+            './assets/images/Neverwinter.png',
             'https://www.gog.com/game/neverwinter_nights_enhanced_edition_pack'
         ),
         new Game(
@@ -92,7 +92,7 @@ export class GamesService {
             9.99,
             0,
             false,
-            '../assets/images/AC.png',
+            './assets/images/AC.png',
             'https://www.gog.com/game/assassins_creed_directors_cut'
         ),
     ];
