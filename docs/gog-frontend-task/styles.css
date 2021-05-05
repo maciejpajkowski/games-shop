@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Source Sans Pro;
+  src: url('SourceSansPro-Regular.ttf');
+}
+@font-face {
+  font-family: Source Sans Pro Bold;
+  src: url('SourceSansPro-Bold.ttf');
+}
+* {
+  font-family: Source Sans Pro, "Arial", monospace;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+}
+body {
+  height: 100vh;
+}
+.btn {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  line-height: 22px;
+  padding: 10px 14px;
+  background: linear-gradient(0deg, #7a3dc6 0%, #b65ae2 100%);
+}
+.btn:hover {
+  background: #713b8d;
+}
+.btn:active {
+  background: #b65ae2;
+}
+.btn:disabled {
+  background: grey;
+  cursor: auto;
+}
+.btn--secret {
+  background: linear-gradient(0deg, #00905e 0%, #00c78c 100%);
+}
+.btn--secret:hover {
+  background: #00905e;
+}
+.btn--secret:active {
+  background: #00c78c;
+}
+
+/*# sourceMappingURL=styles.css.map*/
