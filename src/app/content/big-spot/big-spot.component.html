@@ -1,8 +1,16 @@
 <div class="bigspot">
     <div class="bigspot__lazy">
-        <a href="https://www.gog.com/game/witcher_adventure_game">
-            <img src="../../../assets/images/BigSpot.png" alt="The Witcher: Adventure Game">
-        </a>
+        <img src="{{ game.imageUrl }}" alt="{{ game.title }}" loading="lazy">
+        <div class="bigspot__overlay">
+            <a href="{{ game.link }}" target="_blank">
+                <div class="bigspot__title">{{ game.title }}</div>
+            </a>
+            <div class="bigspot__buy-block">
+                <div class="bigspot__discount" *ngIf="game.discount">-{{ game.discount }}%</div>
+                <button class="bigspot__buy-button" *ngIf="!owned" [disabled]="inCart" (click)="onAddToCart()">{{ inCart ? "IN CART" : "$" + game.price }}</button>
+                <button class="bigspot__buy-button owned" *ngIf="owned" disabled>OWNED</button>
+            </div>
+        </div>
     </div>
-    <button class="btn btn--secret">A secret button that I totally implemented</button>
+    <button class="btn btn--secret" (click)="onSecretClick()">A secret button that I totally implemented</button>
 </div>

@@ -15,5 +15,6 @@ export class ContentComponent implements OnInit {
 
     ngOnInit(): void {
         this.smallSpotGames = this.gamesService.getGamesList().filter((game) => game.featured === false);
+        this.bigSpotGame = this.gamesService.getGamesList().filter((game) => game.featured === true)[0];
     }
 }

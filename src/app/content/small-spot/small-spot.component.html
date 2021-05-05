@@ -1,17 +1,19 @@
 <div class="smallspot">
     <div class="smallspot__game-cover">
-        <a href="{{ game.link }}">
-            <img src="{{ game.imageUrl}}" alt="{{ game.title }}">
+        <a href="{{ game.link }}" target="_blank">
+            <img src="{{ game.imageUrl}}" alt="{{ game.title }}" loading="lazy">
         </a>
     </div>
     <div class="smallspot__game-data">
-        <div class="smallspot__game-title">
-            {{ game.title }}
-        </div>
+        <a href="{{ game.link }}" target="_blank">
+            <div class="smallspot__game-title">
+                {{ game.title }}
+            </div>
+        </a>
         <div class="smallspot__buy-block">
             <div class="smallspot__discount" *ngIf="game.discount">-{{ game.discount }}%</div>
             <button class="smallspot__buy-button" *ngIf="!owned" [disabled]="inCart" (click)="onAddToCart()">{{ inCart ? "IN CART" : "$" + game.price }}</button>
-            <button class="smallspot__buy-button owned" *ngIf="owned" [disabled]="owned">OWNED</button>
+            <button class="smallspot__buy-button owned" *ngIf="owned" disabled>OWNED</button>
         </div>
     </div>
 </div>

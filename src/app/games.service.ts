@@ -44,8 +44,8 @@ export class GamesService {
         new Game(
             0,
             'The Witcher: Adventure Game',
-            9.99,
-            0,
+            5.99,
+            30,
             true,
             '../assets/images/BigSpot.png',
             'https://www.gog.com/game/witcher_adventure_game'
